@@ -33,8 +33,8 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     # Custom apps
-    'accounts.apps.AccountsConfig',
-    'activity.apps.ActivityConfig',
+    'account_app.apps.AccountsConfig',
+    'activity_app.apps.ActivityConfig',
     # Third party apps
     'crispy_forms',
     # In-house modules
@@ -64,8 +64,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'accounts', 'templates', 'accounts'),
-            os.path.join(BASE_DIR, 'activity', 'templates', 'activity'),
+            os.path.join(BASE_DIR, 'account_app', 'templates', 'account_app'),
+            os.path.join(BASE_DIR, 'activity_app', 'templates', 'activity_app'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
