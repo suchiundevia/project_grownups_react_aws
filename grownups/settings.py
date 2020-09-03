@@ -32,9 +32,12 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    # Custom apps
     'accounts.apps.AccountsConfig',
     'activity.apps.ActivityConfig',
+    # Third party apps
     'crispy_forms',
+    # In-house modules
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
