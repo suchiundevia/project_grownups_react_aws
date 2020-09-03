@@ -6,12 +6,12 @@ ISCG7427 -  Agile and Lean Software Development
 * [Team Details](#team-details)
 * [Project Vision](#project-vision)
 * [Project Link](#project-link)
-* [Product Backlog](documentation/ProductBacklog/ProductBacklog.xlsx)
+* [Product Backlog](documents/ProductBacklog/ProductBacklog.xlsx)
 * [Conceptual Entity Relationship Diagram](#conceptual-entity-relationship-diagram)
 * [Logical Entity Relationship Diagram](#logical-entity-relationship-diagram)
-* [References](documentation/REFERENCES.md)
-* [Milestone 01](documentation/Milestone01/Milestone01ProductVision.docx)
-* [Milestone 02](documentation/Milestone02B/Milestone02Resubmission.xlsx)
+* [References](documents/REFERENCES.md)
+* [Milestone 01](documents/Milestone01/Milestone01ProductVision.docx)
+* [Milestone 02](documents/Milestone02B/Milestone02Resubmission.xlsx)
 
 #### Team Details
 
