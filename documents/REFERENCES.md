@@ -2,6 +2,7 @@
 * [Django Documentation](https://docs.djangoproject.com/en/3.1/intro/tutorial01/)
 * [Web Application Development with Django](https://www.youtube.com/watch?v=Z4D3M-NSN58&feature=emb_title)
 * [AWS S3 File Storage & Django](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)
+* [Google Login Integration](https://django-allauth.readthedocs.io/en/latest/installation.html)
 #### Python References
 * [Python Documentation](https://docs.python.org/3/)
 

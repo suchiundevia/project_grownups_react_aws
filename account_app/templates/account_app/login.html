@@ -1,4 +1,6 @@
 {% extends 'activity_app/base.html' %}
+{% load socialaccount %}
+{% providers_media_js %} {# For facebook only #}
 {% load crispy_forms_tags %}
 {% block content %}
     <h1>LOGIN</h1>
@@ -22,6 +24,8 @@
         <div class="border-top pt-3">
             <small class="text-muted">
                 Need An Account? <a class="ml-2" href="{% url 'signup' %}">Sign-Up</a>
+                Google Login <a class="ml-2" href="{% provider_login_url "google" %}">Google Login</a>
+                Facebook Login <a class="ml-2" href="{% provider_login_url "facebook" method="oauth2" %}">Facebook Login</a>
             </small>
         </div>
     </div>

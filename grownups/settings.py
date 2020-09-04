@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     'activity_app.apps.ActivityConfig',
     # Third party apps
     'crispy_forms',
+    # Social media integration apps
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # List of login providers
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     # In-house modules
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +54,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'storages',
 ]
+
+# Required for google and social media login integration
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -58,6 +69,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'grownups.urls'
+
+# To integrate google login functionality
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
 
 TEMPLATES = [
     {
