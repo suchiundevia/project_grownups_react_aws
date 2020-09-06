@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class ActivityConfig(AppConfig):
+class ActivityAppConfig(AppConfig):
     name = 'activity_app'

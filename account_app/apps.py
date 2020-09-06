@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class AccountsConfig(AppConfig):
+class AccountsAppConfig(AppConfig):
     name = 'account_app'
 
     def ready(self):
