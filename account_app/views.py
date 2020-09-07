@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserSignUpForm, UserUpdateForm, UserProfileUpdateForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
+# LoginRequiredMixin: Prevent a user from adding an activity if they have not yet logged in (rather than decorator)
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import DeleteView
 
 
 # FUNCTION BASED VIEWS
@@ -52,3 +56,13 @@ def profile(request):
     context = {'user_form': user_form,
                'user_profile_form': user_profile_form}
     return render(request, 'profile.html', context)
+
+
+# A user must be logged in to view the profile page (decorator prevents access to this page if user is not logged in)
+# Delete an account
+class UserDeleteView(LoginRequiredMixin, DeleteView):
+    model = User
+    # On deletion - redirect to home page
+    success_url = '/'
+    # Typical path for a class based list view <app>/<model>_<viewType>.html
+    template_name = 'account_app/user_delete.html'

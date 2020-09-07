@@ -103,7 +103,7 @@ class ActivityDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     # Function for the UserPassesTestMixin to run and check if the user passes the condition
     def test_func(self):
-        # Get the activity that is being updated (object)
+        # Get the activity that is being deleted (object)
         activity = self.get_object()
         # If the current logged in user matches the activity author than the activity can be updated
         if self.request.user == activity.ActivityAuthor:

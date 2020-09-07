@@ -26,6 +26,10 @@
                 <button class="btn btn-outline-info" type="submit">Update</button>
             </div>
         </form>
+        <div class="form-group">
+            {# Submit button #}
+            <a class="btn btn-danger-info" href="{% url 'user-delete' user.pk %}">Delete Account</a>
+        </div>
     </div>
 
 

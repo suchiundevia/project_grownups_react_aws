@@ -8,8 +8,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    # Google and Social Media Login
-    path('accounts/', include('allauth.urls')),
     # Profile Page
     path('profile/', account_views.profile, name='profile'),
     # Sign Up Page
@@ -33,6 +31,10 @@ urlpatterns = [
     path('password-reset-complete/',
          auth_views.PasswordResetCompleteView.as_view(template_name='account_app/password_reset_complete.html'),
          name='password_reset_complete'),
+    # Accounts
+    path('accounts/', include('account_app.urls')),
+    # Google and Social Media Login
+    path('accounts/', include('allauth.urls')),
     # Activities
     path('activity/', include('activity_app.urls')),
     # Home Page

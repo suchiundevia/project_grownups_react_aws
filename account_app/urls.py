@@ -1,4 +1,9 @@
 from django.urls import path
-from . import views
+from .views import UserDeleteView
+# from . import views
+
 # Direct views used, refer to the global urls.py file
-urlpatterns = []
+urlpatterns = [
+    # Delete account confirmation
+    path('<int:pk>/delete/', UserDeleteView.as_view(), name='user-delete'),
+]
