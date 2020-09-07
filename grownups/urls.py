@@ -33,6 +33,8 @@ urlpatterns = [
     path('password-reset-complete/',
          auth_views.PasswordResetCompleteView.as_view(template_name='account_app/password_reset_complete.html'),
          name='password_reset_complete'),
+    # Activities
+    path('activity/', include('activity_app.urls')),
     # Home Page
     path('', include('base_app.urls')),
     # Admin Panel
