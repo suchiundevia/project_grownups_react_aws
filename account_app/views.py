@@ -4,6 +4,7 @@ from .forms import UserSignUpForm, UserUpdateForm, UserProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 
 
+# FUNCTION BASED VIEWS
 def signup(request):
     # Check if the request is valid
     if request.method == 'POST':

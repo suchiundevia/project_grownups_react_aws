@@ -1,0 +1,20 @@
+{% extends 'base_app/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>ADD Activity</h1>
+    <div class="content-section">
+        <form method="POST">
+            {# Required token to post form #}
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Add Activity</legend>
+                {# Get the form object and display #}
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                {# Submit button #}
+                <button class="btn btn-outline-info" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

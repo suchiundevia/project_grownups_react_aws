@@ -1,12 +1,13 @@
 {% extends 'base_app/base.html' %}
 {% block content %}
-    <h1>ACTIVITIES LISTED</h1>
+    {# User and the number of activities they have added #}
+    <h1 class="mb-3" >ACTIVITIES BY {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
     {% for activity in activities %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ activity.ActivityAuthor.UserProfile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="#">{{ activity.ActivityAuthor }}</a>
+                    <a class="mr-2" href="{% url 'user-activity' activity.ActivityAuthor.username %}">{{ activity.ActivityAuthor }}</a>
                     <small class="text-muted">{{ activity.ActivityPostDate|date:"F d, Y" }}</small>
                 </div>
                 <h2><a class="article-title"
