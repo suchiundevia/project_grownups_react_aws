@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     # Custom apps
     'base_app.apps.BaseAppConfig',
-    'account_app.apps.AccountsAppConfig',
+    'account_app.apps.AccountAppConfig',
     'activity_app.apps.ActivityAppConfig',
     # Third party apps
     'crispy_forms',
