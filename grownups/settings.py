@@ -68,7 +68,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'grownups.herokuapp.com',
+    'grownups.tecxure.com',
+]
 ROOT_URLCONF = 'grownups.urls'
 
 # To integrate google login functionality
