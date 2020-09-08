@@ -3,16 +3,16 @@
     <h1>ACTIVITIES LISTED</h1>
     {% for activity in activities %}
         <article class="media content-section">
-            <img class="rounded-circle article-img" src="{{ activity.ActivityAuthor.UserProfile.image.url }}">
+            <img class="rounded-circle article-img" src="{{ activity.activity_author.UserProfile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="#">{{ activity.ActivityAuthor }}</a>
-                    <small class="text-muted">{{ activity.ActivityPostDate|date:"F d, Y" }}</small>
+                    <a class="mr-2" href="#">{{ activity.activity_author }}</a>
+                    <small class="text-muted">{{ activity.activity_post_date|date:"F d, Y" }}</small>
                 </div>
                 <h2><a class="article-title"
-                       href="{% url 'activity-detail' activity.id %}">{{ activity.ActivityTitle }}</a>
+                       href="{% url 'activity-detail' activity.id %}">{{ activity.activity_title }}</a>
                 </h2>
-                <p class="article-content">{{ activity.ActivityDescription }}</p>
+                <p class="article-content">{{ activity.activity_description }}</p>
             </div>
         </article>
     {% endfor %}

@@ -6,19 +6,22 @@ from django.urls import reverse
 
 # Create your models here.
 class Activity(models.Model):
-    ActivityTitle = models.CharField(max_length=150)
-    ActivityDescription = models.TextField()
-    ActivityMaterial = models.CharField(max_length=250)
-    ActivityStartTime = models.DateTimeField()
-    ActivityEndTime = models.DateTimeField()
-    ActivityPostDate = models.DateTimeField(default=timezone.now)
-    ActivityLocation = models.CharField(max_length=250)
-    ActivityAuthor = models.ForeignKey(User, on_delete=models.CASCADE)
+    activity_title = models.CharField(max_length=150)
+    activity_description = models.TextField()
+    activity_material = models.CharField(max_length=250)
+    activity_start_time = models.DateTimeField()
+    activity_end_time = models.DateTimeField()
+    activity_post_date = models.DateTimeField(default=timezone.now)
+    activity_location = models.CharField(max_length=250)
+    activity_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.ActivityTitle
+        return str(self.activity_title)
 
     # Redirect page
     def get_absolute_url(self):
         # Reverse returns the full path as a string
         return reverse('activity-detail', kwargs={'pk': self.pk})
+
+    class Meta:
+        verbose_name_plural = 'Activity'

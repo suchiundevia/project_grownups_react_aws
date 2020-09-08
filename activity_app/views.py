@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.models import User
 from .models import Activity
@@ -25,7 +25,7 @@ class ActivityListView(ListView):
     template_name = 'activity_app/activity_home.html'
     context_object_name = 'activities'
     # Activities ordered according to post date newest to oldest
-    ordering = ['-ActivityPostDate']
+    ordering = ['-activity_post_date']
     # Number of activities displayed per page
     paginate_by = 2
 
@@ -43,7 +43,7 @@ class UserActivityListView(ListView):
     def get_queryset(self):
         # If the object exists in the database, it will display otherwise show a 404 error
         user = get_object_or_404(User, username=self.kwargs.get('username'))
-        return Activity.objects.filter(ActivityAuthor=user).order_by('-ActivityPostDate')
+        return Activity.objects.filter(ActivityAuthor=user).order_by('-activity_post_date')
 
 
 # Detail view of a single activity
@@ -58,13 +58,13 @@ class ActivityCreateView(LoginRequiredMixin, CreateView):
     model = Activity
     # Typical path for a class based list view <app>/<model>_<viewType>.html
     template_name = 'activity_app/activity_form.html'
-    fields = ['ActivityTitle', 'ActivityDescription', 'ActivityMaterial', 'ActivityStartTime', 'ActivityEndTime',
-              'ActivityLocation']
+    fields = ['activity_title', 'activity_description', 'activity_material', 'activity_start_time', 'activity_end_time',
+              'activity_location']
 
     # Add the method for adding the author before the form is submitted as it is a not null field (integrity constraint)
     def form_valid(self, form):
         # Take the instance of the form and set its author to the current user and return form
-        form.instance.ActivityAuthor = self.request.user
+        form.instance.activity_author = self.request.user
         return super().form_valid(form)
 
 
@@ -73,13 +73,13 @@ class ActivityUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Activity
     # Typical path for a class based list view <app>/<model>_<viewType>.html
     template_name = 'activity_app/activity_form.html'
-    fields = ['ActivityTitle', 'ActivityDescription', 'ActivityMaterial', 'ActivityStartTime', 'ActivityEndTime',
-              'ActivityLocation']
+    fields = ['activity_title', 'activity_description', 'activity_material', 'activity_start_time', 'activity_end_time',
+              'activity_location']
 
     # Add the method for adding the author before the form is submitted as it is a not null field (integrity constraint)
     def form_valid(self, form):
         # Take the instance of the form and set its author to the current user and return form
-        form.instance.ActivityAuthor = self.request.user
+        form.instance.activity_author = self.request.user
         return super().form_valid(form)
 
     # Function for the UserPassesTestMixin to run and check if the user passes the condition
@@ -87,7 +87,7 @@ class ActivityUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         # Get the activity that is being updated (object)
         activity = self.get_object()
         # If the current logged in user matches the activity author than the activity can be updated
-        if self.request.user == activity.ActivityAuthor:
+        if self.request.user == activity.activity_author:
             return True
         else:
             return False
@@ -106,7 +106,7 @@ class ActivityDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         # Get the activity that is being deleted (object)
         activity = self.get_object()
         # If the current logged in user matches the activity author than the activity can be updated
-        if self.request.user == activity.ActivityAuthor:
+        if self.request.user == activity.activity_author:
             return True
         else:
             return False
