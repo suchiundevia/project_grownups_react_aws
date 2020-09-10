@@ -16,10 +16,15 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='account_app/login.html'), name='login'),
     # Logout Page
     path('logout/', auth_views.LogoutView.as_view(template_name='account_app/logout.html'), name='logout'),
-    # # Reset Password Page (Specify Email)
-    # path('passowrd-reset/', account_views.PasswordResetRequest, name='password-reset'),
-    path('password-reset/', auth_views.PasswordResetView.as_view(template_name='account_app/password_reset.html'),
-         name='password_reset'),
+    # Reset Password Page (Specify Email)
+    path('password-reset/',
+         auth_views.PasswordResetView.as_view(
+             template_name='account_app/password_reset.html',
+             subject_template_name='account_app/password_reset_subject.txt',
+             email_template_name='account_app/password_reset_email.html',
+             success_url='/login/',), name='password_reset'),
+    # path('password-reset/', auth_views.PasswordResetView.as_view(template_name='account_app/password_reset.html'),
+    #      name='password_reset'),
     # Reset Password Page (Delivery Message)
     path('password-reset/done/',
          auth_views.PasswordResetDoneView.as_view(template_name='account_app/password_reset_done.html'),
