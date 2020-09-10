@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserSignUpForm, UserUpdateForm, UserProfileUpdateForm
@@ -7,6 +6,7 @@ from django.contrib.auth.models import User
 # LoginRequiredMixin: Prevent a user from adding an activity if they have not yet logged in (rather than decorator)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import DeleteView
+from django.contrib.auth.forms import PasswordResetForm
 
 
 # FUNCTION BASED VIEWS
@@ -25,6 +25,25 @@ def signup(request):
     else:
         form = UserSignUpForm()
     return render(request, 'signup.html', {'form': form})
+
+
+# # Password reset request
+# def PasswordResetRequest(request):
+#     if request.method == "POST":
+#         # Based on the form provided by django
+#         custom_password_reset_form = PasswordResetForm(request.POST)
+#         # If request is valid
+#         if custom_password_reset_form.is_valid():
+#             data = custom_password_reset_form.cleaned_data['email']
+#             # Filter to get user
+#             user = User.objects.filter(Q(email=data))
+#             if user.exists():
+#                 subject = "Password Reset Requested"
+#                 email_template_name = 'account_app/password_reset_email.txt'
+#
+#                 context = {
+#                     'email': user.email,
+
 
 
 # A user must be logged in to view the profile page (decorator prevents access to this page if user is not logged in)

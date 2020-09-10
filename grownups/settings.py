@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY_GROWNUPS')
 # SECRET_KEY = "7%dc*$14_ca7+61zrv7xp4)(f0(8en9@a8b+f0ojeluq@46k*t"
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -170,7 +170,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
 
 # Email backend connection
-SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY_GROWNUPS')
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
@@ -181,7 +181,7 @@ EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 # Variables for AWS S3 bucket connection
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME_GROWNUPS')
 # If a user uploads a file which has the same name as an existing file, don't overwrite them
 AWS_S3_FILE_OVERWRITE = False
 # Recommended to set this to None as the current value is known to cause issues
