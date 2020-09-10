@@ -24,7 +24,7 @@ urlpatterns = [
          auth_views.PasswordResetDoneView.as_view(template_name='account_app/password_reset_done.html'),
          name='password_reset_done'),
     # Reset Password Page (Reset Password - Enter New Password)
-    path('password-reset-confirm/<uidb128>/<token>/',
+    path('password-reset-confirm/<uidb64>/<token>/',
          auth_views.PasswordResetConfirmView.as_view(template_name='account_app/password_reset_confirm.html'),
          name='password_reset_confirm'),
     # Reset Password (Final Confirmation Message and Redirection Link to Login Page)
