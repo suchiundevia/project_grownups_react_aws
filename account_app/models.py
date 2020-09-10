@@ -15,3 +15,23 @@ class UserProfile(models.Model):
 
     class Meta:
         verbose_name_plural = 'User Profile'
+
+
+class Organiser(models.Model):
+    user_profile = models.OneToOneField(UserProfile, default="", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.pk)
+
+    class Meta:
+        verbose_name_plural = 'Organiser'
+
+
+class Visitor(models.Model):
+    user_profile = models.OneToOneField(UserProfile, default="", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.pk)
+
+    class Meta:
+        verbose_name_plural = 'Visitor'
