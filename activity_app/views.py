@@ -41,9 +41,9 @@ class UserActivityListView(ListView):
 
     # Query set to be filtered
     def get_queryset(self):
-        # If the object exists in the database, it will display otherwise show a 404 error
+        # If the object exists in the database, it will display, otherwise show a 404 error
         user = get_object_or_404(User, username=self.kwargs.get('username'))
-        return Activity.objects.filter(ActivityAuthor=user).order_by('-activity_post_date')
+        return Activity.objects.filter(activity_author=user).order_by('-activity_post_date')
 
 
 # Detail view of a single activity
