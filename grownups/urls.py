@@ -22,7 +22,7 @@ urlpatterns = [
              template_name='account_app/password_reset.html',
              subject_template_name='account_app/password_reset_subject.txt',
              email_template_name='account_app/password_reset_email.html',
-             success_url='password-reset/done/',), name='password_reset'),
+             success_url='done/',), name='password_reset'),
     # path('password-reset/', auth_views.PasswordResetView.as_view(template_name='account_app/password_reset.html'),
     #      name='password_reset'),
     # Reset Password Page (Delivery Message)
