@@ -3,8 +3,13 @@
 * [Web Application Development with Django](https://www.youtube.com/watch?v=Z4D3M-NSN58&feature=emb_title)
 * [AWS S3 File Storage & Django](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html)
 * [Google Login Integration](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
 #### Python References
 * [Python Documentation](https://docs.python.org/3/)
+
+#### Google + Facebook Login
+* [Google Login Button Style](https://developers.google.com/identity/sign-in/web/build-button)
+* [Facebook Login Button Style] (https://developers.facebook.com/docs/facebook-login/web)
 
 #### Heroku References
 * [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python?singlepage=true)

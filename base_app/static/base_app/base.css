@@ -84,3 +84,52 @@ a.article-title:hover {
 .account-heading {
     font-size: 2.5rem;
 }
+
+/* GOOGLE LOGIN BUTTON */
+#googleBtn {
+    display: inline-block;
+    background: url('../login_images/google.png') transparent 10px 20% no-repeat;
+    color: dimgray;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#googleBtn:hover {
+    cursor: pointer;
+}
+
+/* FACEBOOK LOGIN BUTTON */
+#facebookBtn {
+    display: inline-block;
+    background: url('../login_images/facebook.png');
+    background-position: center;
+    color: dimgray;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#facebookBtn:hover {
+    cursor: pointer;
+}
