@@ -13,14 +13,14 @@ from .models import UserProfile, Organiser, Visitor
 # Kwargs accepts any additional keywords onto the end of the function
 
 @receiver(post_save, sender=User)
-def createUserProfile(sender, instance, created, **kwargs):
+def create_user_profile(sender, instance, created, **kwargs):
     # If the user was created then create a UserProfile object with the instance of user that was created
     if created:
         UserProfile.objects.create(user=instance)
 
 
 @receiver(post_save, sender=User)
-def saveUserProfile(sender, instance, **kwargs):
+def save_user_profile(sender, instance, **kwargs):
     # Save the profile when a user is created
     instance.userprofile.save()
 

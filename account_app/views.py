@@ -7,14 +7,6 @@ from django.contrib.auth.models import User
 # LoginRequiredMixin: Prevent a user from adding an activity if they have not yet logged in (rather than decorator)
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import DeleteView
-from django.contrib.auth.forms import PasswordResetForm
-from django.core.mail import send_mail
-
-from django.template.loader import render_to_string
-from django.db.models.query_utils import Q
-from django.utils.http import urlsafe_base64_encode
-from django.contrib.auth.tokens import default_token_generator
-from django.utils.encoding import force_bytes
 
 
 # FUNCTION BASED VIEWS

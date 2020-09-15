@@ -10,8 +10,10 @@ ISCG7427 -  Agile and Lean Software Development
 * [Conceptual Entity Relationship Diagram](#conceptual-entity-relationship-diagram)
 * [Logical Entity Relationship Diagram](#logical-entity-relationship-diagram)
 * [References](documents/REFERENCES.md)
+* [Meeting Minutes](documents/MeetingMinutes)
 * [Milestone 01](documents/Milestone01/Milestone01ProductVision.docx)
 * [Milestone 02](documents/Milestone02B/Milestone02Resubmission.xlsx)
+* [Milestone 03](documents/Milestone03)
 
 #### Team Details
 
