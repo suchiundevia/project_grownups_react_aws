@@ -1,7 +1,7 @@
 {% extends 'base_app/base.html' %}
+{% load crispy_forms_filters %}
 {% load crispy_forms_tags %}
 {% block content %}
-
     <div class="content-section">
         <div class="media">
             <img class="rounded-circle account-img" src="{{ user.userprofile.image.url }}">
@@ -10,25 +10,19 @@
                 <p class="text-secondary">{{ user.email }}</p>
             </div>
         </div>
-        {# Add the enctype to ensure the image files are stored correctly #}
         <form method="POST" enctype="multipart/form-data">
-            {# Required token to post form #}
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Profile Info</legend>
-                {# Get the user update form object and display #}
                 {{ user_form|crispy }}
-                {# Get the user profile update form object and display #}
                 {{ user_profile_form|crispy }}
             </fieldset>
             <div class="form-group">
-                {# Submit button #}
-                <button class="btn btn-outline-info" type="submit">Update</button>
+                <button class="btn btn-outline-dark" type="submit">Update</button>
             </div>
         </form>
         <div class="form-group">
-            {# Submit button #}
-            <a class="btn btn-danger-info" href="{% url 'user-delete' user.pk %}">Delete Account</a>
+            <a class="btn btn-danger-dark" href="{% url 'user-delete' user.pk %}">Delete Account</a>
         </div>
     </div>
 

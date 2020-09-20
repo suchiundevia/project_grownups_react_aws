@@ -1,21 +1,18 @@
 {% extends 'base_app/base.html' %}
+{% load crispy_forms_filters %}
 {% load socialaccount %}
-{% providers_media_js %} {# For facebook only #}
+{% providers_media_js %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <h1>LOGIN</h1>
     <div class="content-section">
         <form method="POST">
-            {# Required token to post form #}
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Login!</legend>
-                {# Get the form object and display #}
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                {# Submit button #}
-                <button class="btn btn-outline-info" type="submit">Login</button>
+                <button class="btn btn-outline-dark" type="submit">Login</button>
                 <small class="text-muted ml-2">
                     <a href="{% url 'password_reset' %}">Forgot Password?</a>
                 </small>
