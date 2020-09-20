@@ -1,9 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import include, path
-# Directly imported views and mapped the url
 from account_app import views as account_views
-# Media roots for development phase of project
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -23,8 +21,6 @@ urlpatterns = [
              subject_template_name='account_app/password_reset_subject.txt',
              email_template_name='account_app/password_reset_email.html',
              success_url='done/',), name='password_reset'),
-    # path('password-reset/', auth_views.PasswordResetView.as_view(template_name='account_app/password_reset.html'),
-    #      name='password_reset'),
     # Reset Password Page (Delivery Message)
     path('password-reset/done/',
          auth_views.PasswordResetDoneView.as_view(template_name='account_app/password_reset_done.html'),

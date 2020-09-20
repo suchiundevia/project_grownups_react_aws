@@ -34,7 +34,7 @@
                     <!-- Is the user logged in? Check condition using Django user variable (current user) with attribute is authenticated -->
                     {% if user.is_authenticated %}
                         <!-- If the user is authenticated then display logout link -->
-                        <a class="nav-item nav-link" href="{% url 'activity-create' %}">Add Activity</a>
+                        <a class="nav-item nav-link" href="{% url 'manage-activity' %}">Manage Activities</a>
                         <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                         <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                     {% else %}

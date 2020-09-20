@@ -95,8 +95,10 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'grownups.wsgi.application'
+# Fixtures Path
+FIXTURE_DIRS = (os.path.join(BASE_DIR, 'fixtures'),)
 
+WSGI_APPLICATION = 'grownups.wsgi.application'
 # Database
 DATABASES = {
     'default': {
