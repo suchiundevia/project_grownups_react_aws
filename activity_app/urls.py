@@ -21,5 +21,5 @@ urlpatterns = [
     # Interest
     path('<int:pk>/interest/', views.activity_interest, name='interest'),
     # People interested
-    path('<int:pk>/membersInterested/', views.activity_interest, name='people-interested'),
+    path('<int:pk>/membersInterested/', views.people_interested, name='people-interested'),
 ]

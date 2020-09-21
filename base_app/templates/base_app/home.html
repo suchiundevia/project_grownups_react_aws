@@ -1,4 +1,18 @@
 {% extends 'base_app/base.html' %}
 {% block content %}
-    <h1>HELLO {{ name }}</h1>
-{% endblock content %}
+    <h1>Activities</h1>
+    {% for activity in activities %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ activity.activity_author.userprofile.image.url }}">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <small class="text-muted">{{ activity.activity_post_date|date:"F d, Y" }}</small>
+                </div>
+                <h2><a class="article-title"
+                       href="{% url 'activity-detail' activity.id %}">{{ activity.activity_title }}</a>
+                </h2>
+                <p class="article-content">{{ activity.activity_description }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock %}

@@ -13,9 +13,6 @@ import calendar
 class ActivityListView(ListView):
     model = Activity
     template_name = 'activity_app/activity_home.html'
-    # context_object_name = 'activities'
-    # ordering = ['-activity_post_date']
-    # paginate_by = 2
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -122,12 +119,16 @@ class ManageActivityListView(LoginRequiredMixin, ListView):
 def activity_interest(request, pk):
     activity = get_object_or_404(Activity, id=pk)
     visitor = get_object_or_404(Visitor, user=request.user)
-    interest = Interest(activity=activity, visitor=visitor)
-    interest.save()
-    return render(request, 'activity_app/activity_interest.html')
+
+    if activity.attendance >= Interest.objects.filter(activity_id=activity.id).count():
+        interest = Interest(activity=activity, visitor=visitor)
+        interest.save()
+        return render(request, 'activity_app/activity_interest.html')
+    else:
+        return render(request, 'activity_app/activity_full.html')
 
 
-def people_enrolled(request, pk):
+def people_interested(request, pk):
     interests = Interest.objects.filter(activity_id=pk)
     count = interests.count()
     context = {'count': count}

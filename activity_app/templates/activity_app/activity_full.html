@@ -1,0 +1,9 @@
+{% extends 'base_app/base.html' %}
+{% block content %}
+    <div class="content-section">
+        <div class="alert-info">
+            Sorry the activity is full!
+        </div>
+        <a href="{% url 'home' %}">Return to Homepage</a>
+    </div>
+{% endblock content %}
