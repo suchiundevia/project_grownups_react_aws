@@ -53,4 +53,4 @@ class UserListView(ListView):
     template_name = 'account_app/users.html'
     context_object_name = 'users'
     ordering = ['username']
-    paginate_by = 2
+    paginate_by = 5

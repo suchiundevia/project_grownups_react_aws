@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "model": "activity_app.activity",
+    "pk": 1,
+    "fields": {
+      "activity_title": "Painting",
+      "activity_description": "Watercolor or watercolour, also aquarelle, is a painting method in which the paints are made of pigments suspended in a water-based solution. Watercolor refers to both the medium and the resulting artwork.",
+      "activity_material": "Please bring any paint brushes and painting canvas.",
+      "activity_start_time": "2020-09-24T12:00:00Z",
+      "activity_end_time": "2020-09-24T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "420c New North Rd\nKingsland, Auckland",
+      "activity_suburb": "Kingsland",
+      "activity_author": 2,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 2,
+    "fields": {
+      "activity_title": "Stargazing",
+      "activity_description": "Auckland residents with an affinity for gazing up at multitudes of luminous balls of gas that are made of mostly hydrogen and helium and held together by their own gravity (stars).",
+      "activity_material": "Yourself!",
+      "activity_start_time": "2020-09-30T21:00:00Z",
+      "activity_end_time": "2020-09-30T22:00:00Z",
+      "activity_post_date": "2020-09-15T08:23:12Z",
+      "activity_location": "670 Manukau Road, Epsom, Auckland",
+      "activity_suburb": "Epsom",
+      "activity_author": 10,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 3,
+    "fields": {
+      "activity_title": "Board Games",
+      "activity_description": "Board games are traditionally a subset of tabletop games that involve counters or pieces moved or placed on a pre-marked surface or \"board\", according to a set of rules. In common parlance, however, a board game need not necessarily contain a physical board.",
+      "activity_material": "Bring some board games.",
+      "activity_start_time": "2020-10-10T12:00:00Z",
+      "activity_end_time": "2020-10-10T18:00:00Z",
+      "activity_post_date": "2020-10-02T08:23:12Z",
+      "activity_location": "80 Saint Lukes Road, Mount Albert, Auckland",
+      "activity_suburb": "Mount Albert",
+      "activity_author": 7,
+      "attendance": 10
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 4,
+    "fields": {
+      "activity_title": "Gardening",
+      "activity_description": "Coronavirus concerns have led to school closures around the world. If you’re looking for an activity to keep kids entertained at home, why not introduce them to indoor gardening? As a hobby, gardening provides kids with amazing benefits that contribute to their health and happiness.",
+      "activity_material": "blah",
+      "activity_start_time": "2020-08-22T12:00:00Z",
+      "activity_end_time": "2020-08-22T18:00:00Z",
+      "activity_post_date": "2020-08-21T08:23:12Z",
+      "activity_location": "420c New North Rd\nKingsland, Auckland",
+      "activity_suburb": "Kingsland",
+      "activity_author": 16,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 5,
+    "fields": {
+      "activity_title": "Home Improvement Workshop",
+      "activity_description": "The concept of home improvement, home renovation, or remodeling is the process of renovating or making additions to one's home. Home improvement can consist of projects that upgrade an existing home interior, exterior, or other improvements to the property.",
+      "activity_material": "Any tools you may need help with",
+      "activity_start_time": "2020-09-27T12:00:00Z",
+      "activity_end_time": "2020-09-27T18:00:00Z",
+      "activity_post_date": "2020-09-22T08:23:12Z",
+      "activity_location": "420c New North Rd\nKingsland, Auckland",
+      "activity_suburb": "Kingsland",
+      "activity_author": 12,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 6,
+    "fields": {
+      "activity_title": "Photography",
+      "activity_description": "The art or practice of taking and processing photographs.",
+      "activity_material": "Camera!",
+      "activity_start_time": "2020-10-14T12:00:00Z",
+      "activity_end_time": "2020-10-14T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "670 Manukau Road Epsom, Auckland Central, Auckland",
+      "activity_suburb": "Epsom",
+      "activity_author": 4,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 7,
+    "fields": {
+      "activity_title": "Cooking",
+      "activity_description": "Italian cuisine is a Mediterranean cuisine consisting of the ingredients, recipes and cooking techniques developed across the Italian Peninsula since the antiquity, and later spread around the world together with waves of Italian diaspora.",
+      "activity_material": "Yourself!",
+      "activity_start_time": "2020-10-11T12:00:00Z",
+      "activity_end_time": "2020-10-11T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "277/309 Broadway, Newmarket, Auckland",
+      "activity_suburb": "Newmarket",
+      "activity_author": 9,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 8,
+    "fields": {
+      "activity_title": "Baking",
+      "activity_description": "Baking is a method of preparing food that uses dry heat, normally in an oven, but can also be done in hot ashes, or on hot stones.",
+      "activity_material": "Baking trays",
+      "activity_start_time": "2020-10-15T12:00:00Z",
+      "activity_end_time": "2020-10-15T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "277/309 Broadway, Newmarket, Auckland",
+      "activity_suburb": "Newmarket",
+      "activity_author": 11,
+      "attendance": 5
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 9,
+    "fields": {
+      "activity_title": "Creative Writing",
+      "activity_description": "Creative writing is any writing that goes outside the bounds of normal professional, journalistic, academic, or technical forms of literature, typically identified by an emphasis on narrative craft, character development, and the use of literary tropes or with various traditions of poetry and poetics.",
+      "activity_material": "Notepad",
+      "activity_start_time": "2020-10-30T12:00:00Z",
+      "activity_end_time": "2020-10-30T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "Auckland Domain\nParnell\nAuckland",
+      "activity_suburb": "Parnell",
+      "activity_author": 18,
+      "attendance": 8
+    }
+  },
+  {
+    "model": "activity_app.activity",
+    "pk": 10,
+    "fields": {
+      "activity_title": "Sewing",
+      "activity_description": "Sewing is the craft of fastening or attaching objects using stitches made with a needle and thread. Sewing is one of the oldest of the textile arts, arising in the Paleolithic era.",
+      "activity_material": "Your favourite fabrics",
+      "activity_start_time": "2020-10-28T12:00:00Z",
+      "activity_end_time": "2020-10-28T18:00:00Z",
+      "activity_post_date": "2020-09-21T08:23:12Z",
+      "activity_location": "Auckland Domain\nParnell\nAuckland",
+      "activity_suburb": "Parnell",
+      "activity_author": 19,
+      "attendance": 3
+    }
+  }
+]

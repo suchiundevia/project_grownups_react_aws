@@ -6,14 +6,14 @@
             <img class="rounded-circle article-img" src="{{ user.userprofile.image.url }}">
             <div class="media-body">
                 <div class="mr-2">
-                    <a href="{% url 'user-activity' user.username %}">Activities</a>
-                    <small class="text-muted">{{ user.date_joined|date:"F d, Y" }}</small>
+                    <a href="{% url 'user-activity' user.username %}">{{ user.username }}</a>
+                    <small class="text-muted"> Date Joined: {{ user.date_joined|date:"F d, Y" }}</small>
                 </div>
-                <p class="article-content">{{ user.username }}</p>
-                <p class="article-content">{{ user.first_name }}</p>
-                <p class="article-content">{{ user.last_name }}</p>
-                <p class="article-content">{{ user.email }}</p>
-                <p class="article-content">{{ user.userprofile.about }}</p>
+                <p class="article-content">Name: {{ user.first_name }} {{ user.last_name }}</p>
+                <p class="article-content">Email: {{ user.email }}</p>
+                <small class="text-muted">
+                    <p class="article-content">{{ user.userprofile.about }}</p>
+                </small>
             </div>
         </article>
     {% endfor %}

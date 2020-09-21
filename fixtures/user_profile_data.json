@@ -23,7 +23,7 @@
     "fields": {
       "user": 3,
       "image": "profile_pictures/blue.jpg",
-      "about": "I have over 15 years of experience working in data science. Currently, I work as Asana’s Senior Data Manager, improving products and services for our customers by using advanced analytics, standing up big-data analytical tools, creating and maintaining models, and onboarding compelling new data sets.\n\nPreviously, I was Chief Data Scientist at Guru, where I analyzed data from some of the biggest enterprise companies in the world to educate the market on long-term internet trends."
+      "about": "If you catch me outside of work, I'm an adventurous traveler - 30 countries and counting - and an avid lover of tennis!"
     }
   },
   {
@@ -32,7 +32,7 @@
     "fields": {
       "user": 4,
       "image": "profile_pictures/orange.jpg",
-      "about": "I’m a talent acquisition specialist with an interest in building the most effective workforces possible. For over 20 years, I’ve been helping businesses find their perfect hires. I also do consulting on compensation and benefits, new hire processes, and company culture.\n\nWhen I’m not on the job, I love hiking with my dog, working my way through every recipe in the family cookbook, and indulging my love for seeing new places."
+      "about": "Over the last three years, I've written over 75+ articles covering a broad range of industries, including education, politics and entertainment. My work has been featured in major publications globally, including Forbes, Resume Worded and Entrepreneur Weekly."
     }
   },
   {
@@ -50,7 +50,7 @@
     "fields": {
       "user": 6,
       "image": "profile_pictures/red.jpg",
-      "about": "I was accountable for developing and executing HR strategy for this international video game developer, and led a team of HR reps in the US and UK. I worked closely with the Co-founders, CFO and the Board’s Compensation Committee."
+      "about": "Entrepreneur. Devoted organizer. Web trailblazer. Pop culture junkie. Twitter geek. Amateur creator. Passionate zombie enthusiast. Writer."
     }
   },
   {
@@ -59,7 +59,7 @@
     "fields": {
       "user": 7,
       "image": "profile_pictures/yellow.jpg",
-      "about": "Over the last decade, I have served in a variety of talent development roles within operations, coaching, career planning, recruitment and business development. I have been a key driver in building programming to recruit high-performing teams and train and onboard new hires. My passion for career development also led me to successfully implemented coaching strategies for assessment, career pathways, and professional development."
+      "about": "Explorer. Internet nerd. Beer fan. Tv trailblazer. Organizer. Coffee ninja. Falls down a lot. Bacon junkie. Student. Entrepreneur."
     }
   },
   {
@@ -68,7 +68,7 @@
     "fields": {
       "user": 8,
       "image": "profile_pictures/green.jpg",
-      "about": "testuser07"
+      "about": "Student. Web aficionado. Evil beer lover. Internet enthusiast. Travel scholar."
     }
   },
   {
@@ -77,7 +77,7 @@
     "fields": {
       "user": 9,
       "image": "profile_pictures/black.jpg",
-      "about": "testuser08"
+      "about": "Travel lover. Subtly charming tv guru. Coffee nerd. Extreme student. Writer."
     }
   },
   {
@@ -86,7 +86,7 @@
     "fields": {
       "user": 10,
       "image": "profile_pictures/grey.jpg",
-      "about": "testuser09"
+      "about": "Troublemaker. Pop culture evangelist. Explorer. Tv scholar. Amateur web trailblazer."
     }
   },
   {
@@ -95,7 +95,7 @@
     "fields": {
       "user": 11,
       "image": "profile_pictures/teal.jpg",
-      "about": "testuser10"
+      "about": "Friendly zombie fanatic. Analyst. Reader. Internet practitioner. Subtly charming entrepreneur. Alcohol trailblazer."
     }
   },
   {
@@ -104,7 +104,7 @@
     "fields": {
       "user": 12,
       "image": "profile_pictures/aqua.jpg",
-      "about": "testuser11"
+      "about": "Hardcore introvert. Zombie enthusiast. Food ninja. Hipster-friendly analyst. Bacon fanatic. Typical internetaholic."
     }
   },
   {
@@ -113,7 +113,7 @@
     "fields": {
       "user": 13,
       "image": "profile_pictures/brown.jpg",
-      "about": "testuser12"
+      "about": "Organizer. Communicator. Twitter nerd. Entrepreneur. Internet fan. Beer evangelist. Tv fanatic. Explorer."
     }
   },
   {
@@ -122,7 +122,7 @@
     "fields": {
       "user": 14,
       "image": "profile_pictures/beige.jpg",
-      "about": "testuser13"
+      "about": "Alcohol buff. Reader. Twitter practitioner. Troublemaker. Web lover. Zombie evangelist. Tv junkie. Music advocate."
     }
   },
   {
@@ -131,7 +131,7 @@
     "fields": {
       "user": 15,
       "image": "profile_pictures/pale.jpg",
-      "about": "testuser14"
+      "about": "Music practitioner. Beer expert. Twitter evangelist. Social media maven. Web junkie. Internet ninja. Zombie advocate."
     }
   },
   {
@@ -140,7 +140,7 @@
     "fields": {
       "user": 16,
       "image": "profile_pictures/lavender.jpg",
-      "about": "testuser15"
+      "about": "Alcoholaholic. Thinker. Organizer. Introvert. Beer expert. Wannabe coffee guru. Tv lover."
     }
   },
   {
@@ -149,7 +149,7 @@
     "fields": {
       "user": 17,
       "image": "profile_pictures/berry.jpg",
-      "about": "testuser16"
+      "about": "General twitteraholic. Travel fanatic. Lifelong troublemaker. Food scholar. Web ninja."
     }
   },
   {
@@ -158,7 +158,7 @@
     "fields": {
       "user": 18,
       "image": "profile_pictures/leaf.jpg",
-      "about": "testuser17"
+      "about": "Beer enthusiast. Travel specialist. Proud music fan. Explorer. Problem solver. Organizer. Student."
     }
   },
   {
@@ -167,7 +167,7 @@
     "fields": {
       "user": 19,
       "image": "profile_pictures/forest.jpg",
-      "about": "testuser18"
+      "about": "Beer guru. Bacon nerd. Passionate food maven. Entrepreneur. Friendly social media trailblazer."
     }
   },
   {
@@ -176,7 +176,7 @@
     "fields": {
       "user": 20,
       "image": "profile_pictures/gold.jpg",
-      "about": "testuser19"
+      "about": "Entrepreneur. Proud coffee trailblazer. Passionate travel ninja. Devoted gamer. Student."
     }
   },
   {
@@ -185,7 +185,7 @@
     "fields": {
       "user": 21,
       "image": "profile_pictures/bright.jpg",
-      "about": "testuser20"
+      "about": "Explorer. Professional student. Alcohol evangelist. Bacon ninja. Creator. Tv fanatic."
     }
   }
 ]

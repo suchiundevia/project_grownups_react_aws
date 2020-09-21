@@ -1,9 +1,0 @@
-[
-  {
-    "model": "account_app.visitor",
-    "pk": 1,
-    "fields": {
-      "user": 1
-    }
-  }
-]

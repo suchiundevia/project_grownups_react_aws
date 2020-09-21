@@ -8,6 +8,7 @@ from .utils import Calendar
 from django.utils.safestring import mark_safe
 from datetime import datetime, timedelta, date
 import calendar
+from django.utils import timezone
 
 
 class ActivityListView(ListView):

@@ -9,5 +9,6 @@ def home(request):
     activities = Activity.objects.filter(activity_post_date__month=today.month).order_by('-activity_post_date')
     return render(request, 'base_app/home.html', {'activities': activities})
 
+
 def about(request):
     return render(request, 'base_app/about.html', {'title': 'About'})
