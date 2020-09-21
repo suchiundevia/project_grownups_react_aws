@@ -11,7 +11,7 @@ urlpatterns = [
     # Detail view of an activity (by primary key or link from the title of list view)
     path('<int:pk>/', ActivityDetailView.as_view(), name='activity-detail'),
     # Manage
-    path('user/<str:username>', ManageActivityListView.as_view(), name='manage-activity'),
+    path('<str:username>/manageActivity/', ManageActivityListView.as_view(), name='manage-activity'),
     # Add an activity
     path('new/', ActivityCreateView.as_view(), name='activity-create'),
     # Update an activity
@@ -21,5 +21,5 @@ urlpatterns = [
     # Interest
     path('<int:pk>/interest/', views.activity_interest, name='interest'),
     # People interested
-    path('<int:pk>/membersInterested/', views.activity_interest, name='people-interest'),
+    path('<int:pk>/membersInterested/', views.activity_interest, name='people-interested'),
 ]

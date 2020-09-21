@@ -8,7 +8,7 @@
                     <div class="media-body">
                         <div class="article-metadata">
                             <a class="mr-2"
-                               href="{% url 'user-course' activity.activity_author.username %}">{{ activity.activity_author }}</a>
+                               href="{% url 'user-activity' activity.activity_author.username %}">{{ activity.activity_author }}</a>
                             <small class="text-muted">{{ activity.activity_post_date|date:"F d, Y" }}</small>
                         </div>
                         <h2 class="article-title">{{ activity.activity_title }}</h2>
