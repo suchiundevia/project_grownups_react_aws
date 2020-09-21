@@ -9,27 +9,22 @@ class Calendar(HTMLCalendar):
         self.month = month
         super(Calendar, self).__init__()
 
-    # formats a day as a td
-    # filter events by day
     def formatday(self, day, activities):
         activities_per_day = activities.filter(activity_start_time__day=day)
         d = ''
         for activity in activities_per_day:
-            d += f'<li> {activity.get_html_url} </li>'
+            d += f'<p> {activity.get_html_url} </p>'
 
         if day != 0:
             return f"<td><span class='date'>{day}</span><ul> {d} </ul></td>"
         return '<td></td>'
 
-    # formats a week as a tr
     def formatweek(self, theweek, activities):
         week = ''
         for d, weekday in theweek:
             week += self.formatday(d, activities)
         return f'<tr> {week} </tr>'
 
-    # formats a month as a table
-    # filter events by year and month
     def formatmonth(self, withyear=True):
         activities = Activity.objects.filter(activity_start_time__year=self.year, activity_start_time__month=self.month)
 

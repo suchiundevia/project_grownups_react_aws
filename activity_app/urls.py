@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import ActivityListView, ActivityDetailView, ActivityCreateView, ActivityUpdateView, ActivityDeleteView, \
-    UserActivityListView, ManageActivityListView
+    UserActivityListView, ManageActivityListView, activity_interest
+from . import views
 
 urlpatterns = [
     # List all activities
@@ -17,4 +18,8 @@ urlpatterns = [
     path('<int:pk>/update/', ActivityUpdateView.as_view(), name='activity-update'),
     # Delete an activity
     path('<int:pk>/delete/', ActivityDeleteView.as_view(), name='activity-delete'),
+    # Interest
+    path('<int:pk>/interest/', views.activity_interest, name='interest'),
+    # People interested
+    path('<int:pk>/membersInterested/', views.activity_interest, name='people-interest'),
 ]

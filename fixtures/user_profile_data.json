@@ -1,0 +1,191 @@
+[
+  {
+    "model": "account_app.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "image": "default.jpg",
+      "about": "adminuser"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "image": "profile_pictures/pink.jpg",
+      "about": "When I was 21, I climbed Mount Everest. Not metaphorically—I literally climbed the highest mountain on Earth.\n\nWhile I was hiking, I thought about quitting approximately 5,000 times. (And that’s a lowball estimate.) But despite the high winds, low altitude, mental and physical fatigue, and trail mix overdose, I kept going. I’m that person. Once I say I’ll do something, it will happen."
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "image": "profile_pictures/blue.jpg",
+      "about": "I have over 15 years of experience working in data science. Currently, I work as Asana’s Senior Data Manager, improving products and services for our customers by using advanced analytics, standing up big-data analytical tools, creating and maintaining models, and onboarding compelling new data sets.\n\nPreviously, I was Chief Data Scientist at Guru, where I analyzed data from some of the biggest enterprise companies in the world to educate the market on long-term internet trends."
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "image": "profile_pictures/orange.jpg",
+      "about": "I’m a talent acquisition specialist with an interest in building the most effective workforces possible. For over 20 years, I’ve been helping businesses find their perfect hires. I also do consulting on compensation and benefits, new hire processes, and company culture.\n\nWhen I’m not on the job, I love hiking with my dog, working my way through every recipe in the family cookbook, and indulging my love for seeing new places."
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "image": "profile_pictures/purple.jpg",
+      "about": "I’m a freelance multi-disciplinary graphic designer who’s delivered creative and engaging solutions across brand identity, print, packaging, and digital media.\n\nIn 2013, my online brand campaign for the Dorsey Children’s Hospital won a GDUSA award, one of the most prestigious honors in the graphic design industry.\n\nMy work has also been featured in Creatique Bloq, Compound Magazine, and on the Creative Review blog.\n\n"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 6,
+    "fields": {
+      "user": 6,
+      "image": "profile_pictures/red.jpg",
+      "about": "I was accountable for developing and executing HR strategy for this international video game developer, and led a team of HR reps in the US and UK. I worked closely with the Co-founders, CFO and the Board’s Compensation Committee."
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 7,
+    "fields": {
+      "user": 7,
+      "image": "profile_pictures/yellow.jpg",
+      "about": "Over the last decade, I have served in a variety of talent development roles within operations, coaching, career planning, recruitment and business development. I have been a key driver in building programming to recruit high-performing teams and train and onboard new hires. My passion for career development also led me to successfully implemented coaching strategies for assessment, career pathways, and professional development."
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 8,
+    "fields": {
+      "user": 8,
+      "image": "profile_pictures/green.jpg",
+      "about": "testuser07"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 9,
+    "fields": {
+      "user": 9,
+      "image": "profile_pictures/black.jpg",
+      "about": "testuser08"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 10,
+    "fields": {
+      "user": 10,
+      "image": "profile_pictures/grey.jpg",
+      "about": "testuser09"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 11,
+    "fields": {
+      "user": 11,
+      "image": "profile_pictures/teal.jpg",
+      "about": "testuser10"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 12,
+    "fields": {
+      "user": 12,
+      "image": "profile_pictures/aqua.jpg",
+      "about": "testuser11"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 13,
+    "fields": {
+      "user": 13,
+      "image": "profile_pictures/brown.jpg",
+      "about": "testuser12"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 14,
+    "fields": {
+      "user": 14,
+      "image": "profile_pictures/beige.jpg",
+      "about": "testuser13"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 15,
+    "fields": {
+      "user": 15,
+      "image": "profile_pictures/pale.jpg",
+      "about": "testuser14"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 16,
+    "fields": {
+      "user": 16,
+      "image": "profile_pictures/lavender.jpg",
+      "about": "testuser15"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 17,
+    "fields": {
+      "user": 17,
+      "image": "profile_pictures/berry.jpg",
+      "about": "testuser16"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 18,
+    "fields": {
+      "user": 18,
+      "image": "profile_pictures/leaf.jpg",
+      "about": "testuser17"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 19,
+    "fields": {
+      "user": 19,
+      "image": "profile_pictures/forest.jpg",
+      "about": "testuser18"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 20,
+    "fields": {
+      "user": 20,
+      "image": "profile_pictures/gold.jpg",
+      "about": "testuser19"
+    }
+  },
+  {
+    "model": "account_app.userprofile",
+    "pk": 21,
+    "fields": {
+      "user": 21,
+      "image": "profile_pictures/bright.jpg",
+      "about": "testuser20"
+    }
+  }
+]

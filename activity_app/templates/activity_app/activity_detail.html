@@ -3,7 +3,7 @@
     <div class="content-section">
         <h2>Activity Details</h2>
         <article class="media content-section">
-            <img class="rounded-circle article-img" src="{{ object.activity_author.UserProfile.image.url }}">
+            <img class="rounded-circle article-img" src="{{ object.activity_author.userprofile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2"
@@ -14,6 +14,9 @@
                 <p class="article-content">{{ object.activity_description }}</p>
                 <p class="article-content">{{ object.activity_location }}</p>
                 <p class="article-content">{{ object.activity_suburb }}</p>
+                <a class="btn btn-outline-dark btn-sm mt-1 mb-1"
+                   href="{% url 'interest' object.id %}">Confirm Attendance
+                </a>
             </div>
         </article>
     </div>

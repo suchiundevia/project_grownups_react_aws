@@ -3,7 +3,7 @@
     <h3 class="mb-3">Activities organised by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h3>
     {% for activity in activities %}
         <article class="media content-section">
-            <img class="rounded-circle article-img" src="{{ activity.activity_author.UserProfile.image.url }}">
+            <img class="rounded-circle article-img" src="{{ activity.activity_author.userprofile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
                     <a class="mr-2"
