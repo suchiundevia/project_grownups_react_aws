@@ -1,15 +1,15 @@
 import os
 import django_heroku
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
-
-sentry_sdk.init(
-    dsn="https://95b214b847014cf2850ed39b905136d8@o450365.ingest.sentry.io/5435142",
-    integrations=[DjangoIntegration()],
-    traces_sample_rate=1.0,
-
-    send_default_pii=True
-)
+# import sentry_sdk
+# from sentry_sdk.integrations.django import DjangoIntegration
+#
+# sentry_sdk.init(
+#     dsn="https://95b214b847014cf2850ed39b905136d8@o450365.ingest.sentry.io/5435142",
+#     integrations=[DjangoIntegration()],
+#     traces_sample_rate=1.0,
+#
+#     send_default_pii=True
+# )
 
 # Base directory path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -167,7 +167,8 @@ DEFAULT_FROM_EMAIL = 'suchi.undevia@tecxure.com'
 # Variables for AWS S3 bucket connection
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+# AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_STORAGE_BUCKET_NAME = 'grownups-bucket'
 # If a user uploads a file which has the same name as an existing file, don't overwrite them
 AWS_S3_FILE_OVERWRITE = False
 # Recommended to set this to None as the current value is known to cause issues

@@ -10,7 +10,7 @@ urlpatterns = [
     # Detail view of an activity (by primary key or link from the title of list view)
     path('<int:pk>/', ActivityDetailView.as_view(), name='activity-detail'),
     # Manage
-    path('user/<str:username>', UserActivityListView.as_view(), name='manage-activity'),
+    path('user/<str:username>', ManageActivityListView.as_view(), name='manage-activity'),
     # Add an activity
     path('new/', ActivityCreateView.as_view(), name='activity-create'),
     # Update an activity

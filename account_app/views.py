@@ -5,7 +5,7 @@ from .forms import UserSignUpForm, UserUpdateForm, UserProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import DeleteView
+from django.views.generic import DeleteView, ListView
 
 
 def signup(request):
@@ -46,3 +46,11 @@ class UserDeleteView(LoginRequiredMixin, DeleteView):
     model = User
     success_url = '/'
     template_name = 'account_app/user_delete.html'
+
+
+class UserListView(ListView):
+    model = User
+    template_name = 'account_app/users.html'
+    context_object_name = 'users'
+    ordering = ['username']
+    paginate_by = 2

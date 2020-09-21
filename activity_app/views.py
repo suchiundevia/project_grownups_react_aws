@@ -3,14 +3,51 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.contrib.auth.models import User
 from .models import Activity
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from .utils import Calendar
+from django.utils.safestring import mark_safe
+from datetime import datetime, timedelta, date
+import calendar
 
 
 class ActivityListView(ListView):
     model = Activity
     template_name = 'activity_app/activity_home.html'
-    context_object_name = 'activities'
-    ordering = ['-activity_post_date']
-    paginate_by = 2
+
+    # context_object_name = 'activities'
+    # ordering = ['-activity_post_date']
+    # paginate_by = 2
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        d = get_date(self.request.GET.get('month', None))
+        cal = Calendar(d.year, d.month)
+        html_cal = cal.formatmonth(withyear=True)
+        context['calendar'] = mark_safe(html_cal)
+        context['prev_month'] = prev_month(d)
+        context['next_month'] = next_month(d)
+        return context
+
+
+def get_date(req_month):
+    if req_month:
+        year, month = (int(x) for x in req_month.split('-'))
+        return date(year, month, day=1)
+    return datetime.today()
+
+
+def prev_month(d):
+    first = d.replace(day=1)
+    prev_month = first - timedelta(days=1)
+    month = 'month=' + str(prev_month.year) + '-' + str(prev_month.month)
+    return month
+
+
+def next_month(d):
+    days_in_month = calendar.monthrange(d.year, d.month)[1]
+    last = d.replace(day=days_in_month)
+    next_month = last + timedelta(days=1)
+    month = 'month=' + str(next_month.year) + '-' + str(next_month.month)
+    return month
 
 
 class UserActivityListView(ListView):
@@ -33,7 +70,7 @@ class ActivityCreateView(LoginRequiredMixin, CreateView):
     model = Activity
     template_name = 'activity_app/activity_form.html'
     fields = ['activity_title', 'activity_description', 'activity_material', 'activity_start_time', 'activity_end_time',
-              'activity_location']
+              'attendance', 'activity_location', 'activity_suburb', ]
 
     def form_valid(self, form):
         form.instance.activity_author = self.request.user
@@ -44,7 +81,7 @@ class ActivityUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Activity
     template_name = 'activity_app/activity_form.html'
     fields = ['activity_title', 'activity_description', 'activity_material', 'activity_start_time', 'activity_end_time',
-              'activity_location', 'activity_suburb',]
+              'attendance', 'activity_location', 'activity_suburb', ]
 
     def form_valid(self, form):
         form.instance.activity_author = self.request.user
