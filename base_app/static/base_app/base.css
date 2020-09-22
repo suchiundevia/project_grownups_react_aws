@@ -88,33 +88,41 @@ a.article-title:hover {
 }
 
 .calendar {
-    width: 98%;
+    width: 100%;
     margin: auto;
     font-size: 13px;
 }
 
 .calendar tr, .calendar td {
-    border: 1px solid black;
+    border: 1px solid slategrey;
 }
 
 .calendar th {
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
     padding: 10px;
     text-align: center;
     font-size: 18px;
 }
 
 .calendar td {
+    font-family: 'Roboto', sans-serif;
     width: 200px;
     height: 150px;
     padding: 20px 0px 0px 5px;
 }
 
 .month {
-    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .date {
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 ul {
