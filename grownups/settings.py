@@ -1,15 +1,15 @@
 import os
 import django_heroku
-# import sentry_sdk
-# from sentry_sdk.integrations.django import DjangoIntegration
-#
-# sentry_sdk.init(
-#     dsn="https://95b214b847014cf2850ed39b905136d8@o450365.ingest.sentry.io/5435142",
-#     integrations=[DjangoIntegration()],
-#     traces_sample_rate=1.0,
-#
-#     send_default_pii=True
-# )
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+sentry_sdk.init(
+    dsn="https://95b214b847014cf2850ed39b905136d8@o450365.ingest.sentry.io/5435142",
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=1.0,
+
+    send_default_pii=True
+)
 
 # Base directory path
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
