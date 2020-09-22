@@ -23,7 +23,7 @@ class Activity(models.Model):
     @property
     def get_html_url(self):
         url = reverse('activity-detail', args=(self.id,))
-        return f'<a class="btn btn-danger" href="{url}">{self.activity_title}</a>'
+        return f'<a class="btn btn-danger btn-sm" href="{url}">{self.activity_title}</a>'
 
     class Meta:
         verbose_name_plural = 'Activities'

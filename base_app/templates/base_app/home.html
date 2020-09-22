@@ -1,7 +1,7 @@
 {% extends 'base_app/base.html' %}
 {% block content %}
     <div class="content-section">
-        <h1>Activities</h1>
+        <h3>Upcoming activities</h3>
         {% for activity in activities %}
             <article class="media content-section">
                 <img class="rounded-circle article-img" src="{{ activity.activity_author.userprofile.image.url }}">
