@@ -244,6 +244,143 @@
       "targets": [],
       "value": "Welcome! Your account has been created! You now should be able to login."
     }]
+  }, {
+    "id": "c4edcd6b-9931-42a5-a2ff-760b791da781",
+    "name": "Update Profile",
+    "commands": [{
+      "id": "97e9345d-7708-4fdd-8dbe-d7bd71d8ad2f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3dc53d1-7131-4ae7-aad5-60ff28439083",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1395x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3e33971-fe58-4076-b1c8-34180c44661b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.navbar-nav:nth-child(2) > .nav-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarToggle']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login/')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ac90533-d17d-49a0-81be-4e67fee65239",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_username']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "testuser21"
+    }, {
+      "id": "4e131966-52f9-411c-acc3-1b95f8be6975",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "testing321"
+    }, {
+      "id": "8f1da84e-1273-49b2-81b2-f81c7e6efbe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9c06bf4-c917-43a3-81e0-eeadf2bfbd08",
+      "comment": "",
+      "command": "click",
+      "target": "id=profile",
+      "targets": [
+        ["id=profile", "id"],
+        ["linkText=Profile", "linkText"],
+        ["css=#profile", "css:finder"],
+        ["xpath=//a[contains(text(),'Profile')]", "xpath:link"],
+        ["xpath=//a[@id='profile']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarToggle']/div[2]/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/profile/')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f383828c-a438-4d6b-bf66-48b2cbde7693",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_about",
+      "targets": [
+        ["id=id_about", "id"],
+        ["name=about", "name"],
+        ["css=#id_about", "css:finder"],
+        ["xpath=//textarea[@id='id_about']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_about']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f5a456-cf88-4bf2-a404-3aea8420f63f",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_about",
+      "targets": [
+        ["id=id_about", "id"],
+        ["name=about", "name"],
+        ["css=#id_about", "css:finder"],
+        ["xpath=//textarea[@id='id_about']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_about']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I like programming"
+    }, {
+      "id": "e024488c-e24a-4f75-baa0-961a6abc1a9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-dark",
+      "targets": [
+        ["css=.btn-outline-dark", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16bd476a-57bf-4026-8c5f-b544743889c2",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=alert",
+      "targets": [],
+      "value": "Your details have been updated."
+    }]
   }],
   "suites": [{
     "id": "dacc885a-66cf-49c4-b519-f31da04873da",

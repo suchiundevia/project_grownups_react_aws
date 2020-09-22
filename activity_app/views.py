@@ -66,6 +66,7 @@ class ActivityDetailView(DetailView):
 
 class ActivityCreateView(LoginRequiredMixin, CreateView):
     model = Activity
+    success_url = '/'
     template_name = 'activity_app/activity_form.html'
     fields = ['activity_title', 'activity_description', 'activity_material', 'activity_start_time', 'activity_end_time',
               'attendance', 'activity_location', 'activity_suburb', ]
