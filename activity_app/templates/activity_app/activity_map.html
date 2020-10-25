@@ -5,22 +5,67 @@
         <article class="media content-section">
             <div class="media-body">
                 <div class="article-metadata">
+                    <label class="exampleFormControlInput1">Radius:</label>
+                    <select id="radius_km" class="form-control">
+                        <option value="1">1km</option>
+                        <option value="2">2km</option>
+                        <option value="3">3km</option>
+                        <option value="5">5km</option>
+                        <option value="10">10km</option>
+                    </select><br>
+                    <button type="submit" class="btn btn-dark" onclick="initMap()">Draw</button>
+                    <br><br>
+
                     <script>
+
                         function initMap() {
                             const resultsMap = new google.maps.Map(document.getElementById("map"), {
-                                zoom: 10,
-                                center: {lat: -34.397, lng: 150.644},
+                                zoom: 12,
+                                center: {lat: -36.848461, lng: 174.763336},
                             });
                             let geocoder = new google.maps.Geocoder();
+                            const userAdd = "Newmarket Auckland"
+                            geocoder.geocode({"address": userAdd}, (results, status) => {
+                                if (status === "OK") {
+                                    resultsMap.setCenter(results[0].geometry.location);
+                                    const userPositionLat = results[0].geometry.location.lat();
+                                    const userPositionLng = results[0].geometry.location.lng();
+                                    const cityCircle = new google.maps.Circle({
+                                        strokeColor: "#FF0000",
+                                        strokeOpacity: 0.9,
+                                        strokeWeight: 0,
+                                        fillColor: "#DAA520",
+                                        fillOpacity: 0.4,
+                                        map: resultsMap,
+                                        {#center: {lat: -36.867659, lng: 174.777671},#}
+                                        center: {lat: userPositionLat, lng: userPositionLng},
+                                        radius: document.getElementById("radius_km").value * 1000,
+                                    });
+                                }
+                            });
                             {% for activity in activities %}
-
                                 address = "{{ activity.activity_location }}";
                                 geocoder.geocode({"address": address}, (results, status) => {
                                     if (status === "OK") {
-                                        resultsMap.setCenter(results[0].geometry.location);
-                                        new google.maps.Marker({
+                                        {#resultsMap.setCenter(results[0].geometry.location);#}
+                                        let contentString = '<div id="content">' +
+                                            '<div id="siteNotice">' +
+                                            "</div>" +
+                                            '<h5 id="firstHeading" class="firstHeading"><a href = "{% url "activity-detail" activity.id %}"> {{ activity.activity_title }} </a></h5>' +
+                                            '<div id="bodyContent">' +
+                                            "<p>{{ activity.activity_description }}</p>" +
+                                            "</div>" +
+                                            "</div>";
+                                        let infowindow = new google.maps.InfoWindow({
+                                            content: contentString,
+                                        });
+                                        let marker = new google.maps.Marker({
                                             map: resultsMap,
                                             position: results[0].geometry.location,
+                                            animation: google.maps.Animation.DROP,
+                                        });
+                                        marker.addListener("click", () => {
+                                            infowindow.open(map, marker);
                                         });
                                     } else {
                                         alert(
