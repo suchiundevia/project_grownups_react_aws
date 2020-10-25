@@ -8,6 +8,7 @@ from .utils import Calendar
 from django.utils.safestring import mark_safe
 from datetime import datetime, timedelta, date
 import calendar
+from django.views.decorators.clickjacking import xframe_options_exempt
 from django.utils import timezone
 
 
@@ -136,3 +137,9 @@ def people_interested(request, pk):
     count = interests.count()
     context = {'count': count}
     return render(request, 'activity_app/people_interest.html', context)
+
+
+def activity_map(request):
+    today = timezone.now()
+    activities = Activity.objects.filter(activity_start_time__month=today.month)
+    return render(request, 'activity_app/activity_map.html', {'activities': activities})

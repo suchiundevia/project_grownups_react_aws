@@ -10,10 +10,19 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'base_app/base.css' %}">
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGaluZexMdRlLhp7xI3aEjyMod0bylP6Q&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <style type="text/css">
+        #map {
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
 <!-- Main Navigation Bar -->
@@ -30,6 +39,7 @@
                     <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
                     <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
                     <a class="nav-item nav-link" href="{% url 'activity-home' %}">Activities</a>
+                    <a class="nav-item nav-link" href="{% url 'activity-map' %}">Activities Map</a>
                 </div>
                 <!-- Navigation Bar Right Side -->
                 <div class="navbar-nav">
@@ -38,7 +48,8 @@
                         <!-- If the user is authenticated then display logout link -->
                         <a class="nav-item nav-link" href="{% url 'users' %} ">Members</a>
                         <a class="nav-item nav-link" href="{% url 'activity-create' %} ">Add Activities</a>
-                        <a class="nav-item nav-link" href="{% url 'manage-activity' user.username  %} ">Manage Activity</a>
+                        <a class="nav-item nav-link" href="{% url 'manage-activity' user.username %} ">Manage
+                            Activity</a>
                         <a id="profile" class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                         <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                     {% else %}

@@ -6,6 +6,8 @@ from . import views
 urlpatterns = [
     # List all activities
     path('all/', ActivityListView.as_view(), name='activity-home'),
+    # List all activities on map
+    path('map/', views.activity_map, name='activity-map'),
     # Activities listed per selected user
     path('user/<str:username>', UserActivityListView.as_view(), name='user-activity'),
     # Detail view of an activity (by primary key or link from the title of list view)
