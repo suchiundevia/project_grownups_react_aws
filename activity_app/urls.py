@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import ActivityListView, ActivityDetailView, ActivityCreateView, ActivityUpdateView, ActivityDeleteView, \
-    UserActivityListView, ManageActivityListView, activity_interest
+    UserActivityListView, ManageActivityListView
 from . import views
 
 urlpatterns = [
