@@ -5,6 +5,8 @@
         <article class="media content-section">
             <div class="media-body">
                 <div class="article-metadata">
+                    <label class="exampleFormControlInput1">Address:</label>
+                    <input type="text" class="form-control" id="userAddress" placeholder="Enter home address">
                     <label class="exampleFormControlInput1">Radius:</label>
                     <select id="radius_km" class="form-control">
                         <option value="1">1km</option>
@@ -15,17 +17,15 @@
                     </select><br>
                     <button type="submit" class="btn btn-dark" onclick="initMap()">Draw</button>
                     <br><br>
-
                     <script>
-
                         function initMap() {
                             const resultsMap = new google.maps.Map(document.getElementById("map"), {
                                 zoom: 12,
                                 center: {lat: -36.848461, lng: 174.763336},
                             });
                             let geocoder = new google.maps.Geocoder();
-                            const userAdd = "Newmarket Auckland"
-                            geocoder.geocode({"address": userAdd}, (results, status) => {
+                            const userAddress = document.getElementById("userAddress").value
+                            geocoder.geocode({"address": userAddress}, (results, status) => {
                                 if (status === "OK") {
                                     resultsMap.setCenter(results[0].geometry.location);
                                     const userPositionLat = results[0].geometry.location.lat();

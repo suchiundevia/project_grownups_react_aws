@@ -2,11 +2,22 @@
 {% load crispy_forms_filters %}
 {% load crispy_forms_tags %}
 {% block content %}
+    <script type="text/javascript">
+        $(function () {
+            $('.datepicker').datetimepicker(
+                {
+                    format: 'YYYY-MM-DD HH:mm:ss',
+                    sideBySide: true
+                }
+            );
+        });
+    </script>
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Add Activity</legend>
+                <small class="text-muted">Date Time Format "YYYY-MM-DD HH:MM"</small><br>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
