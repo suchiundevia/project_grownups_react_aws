@@ -1,0 +1,82 @@
+[
+  {
+    "model": "activity_app.news",
+    "pk": 1,
+    "fields": {
+      "news_author": 7,
+      "news_title": "'Little puffballs' boost the takahē population at Te Anau sanctuary",
+      "news_description": "Fluffy and rare, a pair of newly hatched Te Anau takahē chicks will help bolster the species population nationally.\r\n\r\nDepartment of Conservation Te Anau Bird Sanctuary ranger Kiri Klein said there were two pairs of resident takahē at the sanctuary, one pair with two 2-week-old foster chicks.\r\n\r\nPopulation numbers were about the 445 mark.\r\n\r\nIn the wild, takahē faced challenges such as predation, drowning and falling from heights such as cliffs.",
+      "news_post_date": "2020-10-27T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 2,
+    "fields": {
+      "news_author": 14,
+      "news_title": "Auckland Council's new cultural and economic agency named Auckland Unlimited",
+      "news_description": "Auckland councillors decided on the name today for the new council-controlled organisation created from the merger of Regional Facilities Auckland and Auckland Tourism, Events and Economic Development (Ateed).\n\nThe merger of the two CCOs was the major recommendation of an independent review into the council's five CCOs, and approved by the governing body on August 27. The merger is expected to lead to savings of $67 million over 10 years.",
+      "news_post_date": "2020-10-26T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 3,
+    "fields": {
+      "news_author": 2,
+      "news_title": "New Zealand's best summer foods and regional dishes",
+      "news_description": "Summer holidays have a lot of great things going for them, but the food might be the best. From stone fruit to crayfish, indulgent cheeses to incredible icecreams, here are some of our favourite Kiwi flavours to find this summer - right from the source. https://www.nzherald.co.nz/travel/go-nz-new-zealands-best-summer-foods-and-regional-dishes/MOUDY47XI47HSGF5XVJOWNEKTM/",
+      "news_post_date": "2020-10-25T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 4,
+    "fields": {
+      "news_author": 19,
+      "news_title": "Covid speeds up robot jobs revolution",
+      "news_description": "As automation and online work gain ground, organisers of the annual Davos forum are projecting employers will split work equally between machines and people by 2025, with the coronavirus pandemic accelerating changes in the labor market.\n\nThe World Economic Forum, in a report released Wednesday on the future of jobs, expects that a new division of labor between humans and machines will upend and eliminate some 85 million jobs globally across 15 industries. But it also expects that 97 million new roles will emerge in sectors like artificial intelligence, content-creation and \"the care economy\" involving kids and the elderly.",
+      "news_post_date": "2020-10-24T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 5,
+    "fields": {
+      "news_author": 7,
+      "news_title": "Netflix reports slump in subscriber growth",
+      "news_description": "Netflix's subscriber growth slowed dramatically during the northern hemisphere summer months after surging in the spring fueled by pandemic lockdowns that corralled millions of people in their homes.\n\nThe summer slump came as more people sought distraction from the pandemic outdoors and major US professional sports resumed play, offering other entertainment alternatives to the world's most popular video streaming service.\n\nThe drop-off disclosed Tuesday in Netflix's latest earnings report was more dramatic than management had warned it might be.",
+      "news_post_date": "2020-10-23T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 6,
+    "fields": {
+      "news_author": 5,
+      "news_title": "Resident concerned about pūkeko killed by traffic at Whanganui industrial area",
+      "news_description": "The sight of yet another dead pūkeko on Mill Rd has both sickened and angered Castlecliff resident Roger Shand.\n\nHe has seen about 12 birds killed on the road over the last year, as development continues at Westbourne Industrial Estate. Better planning could have avoided this or the birds could have been moved, he said.\n\nBut Whanganui District Council senior stormwater engineer Kritzo Venter said precautions will be taken and the situation will improve.",
+      "news_post_date": "2020-10-22T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 7,
+    "fields": {
+      "news_author": 11,
+      "news_title": "West Auckland beer brewer Hallertau makes country's first schnapps from Covid 19 lockdown spoiled stock",
+      "news_description": "A West Auckland brewery has achieved the ultimate in recycling - turning stale ale into the country's first beer schnapps.\n\nBack in March, on the cusp of the Covid-19 lockdown, Hallertau Brewery's trade customers had around 2000 litres of beer sitting in already opened kegs.\n\n\"Some of it was terrible, some of it was all right, but at the end of lockdown, we just swapped out everything for fresh beer,\" said head brewer Steve Plowman.\n\nKiwi ingenuity, combined with Bavarian tradition and otherwise unsaleable \"ugly\" or undersized fruit from Kumeu neighbours, Boric Orchards, led to the creation of two just released schnapps - Granny Smith apple and lemon.",
+      "news_post_date": "2020-10-21T19:13:09Z"
+    }
+  },
+  {
+    "model": "activity_app.news",
+    "pk": 8,
+    "fields": {
+      "news_author": 4,
+      "news_title": "Common garden weed, spur valerian, wreaking havoc on native vegetation in Lyttelton Harbour",
+      "news_description": "A common garden plant is wreaking havoc on rare natives in Lyttelton Harbour, near Christchurch.\n\nSpur valerian, a cottage garden plant with pink, magenta or white flowers, is spreading across rocky outcrops and coastal cliffs around Banks Peninsula and the harbour.\n\n\"Don't let that pretty splash of pink fool you – spur valerian has no place in our natural environment,\" said Christchurch City Council park ranger Di Carter.\n\n\"Spur valerian, originally from the Mediterranean, is an aggressive species and a serious threat to the rare native plants that call Whakaraupō home.\"\n\nThe rocky volcanic bluffs and coastal cliffs of Whakaraupō Harbour and Banks Peninsula are home to many rare and fragile native species found nowhere else in the world.",
+      "news_post_date": "2020-10-20T19:13:09Z"
+    }
+  }
+]
