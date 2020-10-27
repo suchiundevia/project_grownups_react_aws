@@ -1,9 +1,7 @@
-from django.test import SimpleTestCase, TestCase, Client
+from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from django.contrib.auth.models import User
 from .views import ActivityListView, NewsListView, UserActivityListView, ActivityDetailView, ActivityCreateView, \
-    ActivityUpdateView, ActivityDeleteView, people_interested, activity_interest
-from .models import Activity, News
+    ActivityUpdateView, ActivityDeleteView
 
 
 class TestUrls(SimpleTestCase):
