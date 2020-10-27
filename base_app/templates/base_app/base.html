@@ -53,7 +53,7 @@
                         <a class="nav-item nav-link" href="{% url 'manage-activity' user.username %} ">Manage
                             Activity</a>
                         <a id="profile" class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-                        <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                        <a id="logout" class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                     {% else %}
                         <!-- If the user is not authenticated then display login and signup links -->
                         <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>

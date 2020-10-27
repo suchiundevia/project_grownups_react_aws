@@ -7,21 +7,21 @@
     "id": "42cf26cb-0017-49b9-bce4-bbb5b2764f1d",
     "name": "Login",
     "commands": [{
-      "id": "775d13d5-caef-48dd-aa51-e990e9616557",
+      "id": "adff4c5f-949a-4133-807f-58f639807b91",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "ae503e8b-1950-4682-bfd2-796b2068e612",
+      "id": "f4660a12-f688-4738-a09c-68a02c8ad32a",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1542x1196",
+      "target": "2034x1410",
       "targets": [],
       "value": ""
     }, {
-      "id": "bf2deb35-4334-4168-866e-9ea92a8dbb6e",
+      "id": "88740e9b-ff26-4302-95dc-07ea17843a00",
       "comment": "",
       "command": "click",
       "target": "linkText=Login",
@@ -36,7 +36,7 @@
       ],
       "value": ""
     }, {
-      "id": "73b28210-0c14-4fd2-98ac-525b4daf2a5f",
+      "id": "8ddc14fa-6c75-416d-b48d-c43755de05a2",
       "comment": "",
       "command": "type",
       "target": "id=id_username",
@@ -48,9 +48,23 @@
         ["xpath=//div[@id='div_id_username']/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "testuser17"
+      "value": "amandalevete"
     }, {
-      "id": "9e4848c6-dbd0-4c78-82ae-adf5b8b303aa",
+      "id": "f1a24181-bb26-484c-ad0a-99f7ad5f1a7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='div_id_password']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4670a87c-a75f-42b8-b472-0958a8152f53",
       "comment": "",
       "command": "type",
       "target": "id=id_password",
@@ -64,7 +78,7 @@
       ],
       "value": "testing321"
     }, {
-      "id": "9c65c7fe-8cc0-4298-819f-48cb7998182c",
+      "id": "902e4be9-a30c-4a6f-9954-865c4848ddf2",
       "comment": "",
       "command": "click",
       "target": "css=.btn",
@@ -76,12 +90,27 @@
       ],
       "value": ""
     }, {
-      "id": "62adc2d6-a797-4c42-827e-9c52ec120c18",
+      "id": "f3d1d156-0bf3-4c6a-8dd8-2bd8d8fec039",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.navbar-nav:nth-child(2) > .nav-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarToggle']/div[2]/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout/')]", "xpath:href"],
+        ["xpath=//div[2]/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c118acfd-168b-43eb-b769-a97b68bce425",
       "comment": "",
       "command": "assertText",
-      "target": "id=profile",
+      "target": "id=logout",
       "targets": [],
-      "value": "Profile"
+      "value": "You have been logged out"
     }]
   }, {
     "id": "66342d08-5359-4ecb-8ae4-7dab30b4512e",
@@ -289,7 +318,7 @@
         ["xpath=//div[@id='div_id_username']/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "testuser21"
+      "value": "amandalevete"
     }, {
       "id": "4e131966-52f9-411c-acc3-1b95f8be6975",
       "comment": "",
