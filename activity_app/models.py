@@ -51,3 +51,16 @@ class VisitorNotification(models.Model):
 
     class Meta:
         verbose_name_plural = 'InterestNotifications'
+
+
+class News(models.Model):
+    news_author = models.ForeignKey(User, on_delete=models.CASCADE)
+    news_title = models.CharField(max_length=150, null=True, blank=True)
+    news_description = models.TextField(null=True, blank=True)
+    news_post_date = models.DateTimeField(default=timezone.now, null=True, blank=True)
+
+    def __str__(self):
+        return str(self.news_title)
+
+    class Meta:
+        verbose_name_plural = 'News Stories'

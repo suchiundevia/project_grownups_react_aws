@@ -1,11 +1,13 @@
 from django.urls import path
 from .views import ActivityListView, ActivityDetailView, ActivityCreateView, ActivityUpdateView, ActivityDeleteView, \
-    UserActivityListView, ManageActivityListView
+    UserActivityListView, ManageActivityListView, NewsListView
 from . import views
 
 urlpatterns = [
     # List all activities
     path('all/', ActivityListView.as_view(), name='activity-home'),
+    # List all news
+    path('news/', NewsListView.as_view(), name='news-home'),
     # List all activities on map
     path('map/', views.activity_map, name='activity-map'),
     # Activities listed per selected user

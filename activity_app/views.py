@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.models import User
-from .models import Activity, Interest
+from .models import Activity, Interest, News
 from account_app.models import Visitor
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .utils import Calendar
@@ -143,3 +143,11 @@ def activity_map(request):
     today = timezone.now()
     activities = Activity.objects.filter(activity_start_time__month=today.month)
     return render(request, 'activity_app/activity_map.html', {'activities': activities})
+
+
+class NewsListView(ListView):
+    model = News
+    template_name = 'activity_app/news_home.html'
+    context_object_name = 'stories'
+    ordering = ['-news_post_date']
+    paginate_by = 2
