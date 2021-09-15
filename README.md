@@ -3,7 +3,6 @@ ISCG7427 -  Agile and Lean Software Development
 
 ### CONTENTS
 
-* [Team Details](#team-details)
 * [Project Vision](#project-vision)
 * [Product Backlog](documents/ProductBacklog/ProductBacklog.xlsx)
 * [References](documents/REFERENCES.md)
