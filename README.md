@@ -8,11 +8,6 @@ ISCG7427 -  Agile and Lean Software Development
 * [Product Backlog](documents/ProductBacklog/ProductBacklog.xlsx)
 * [References](documents/REFERENCES.md)
 
-#### Team Details
-
-Team Name: 2+2=5
-
-Team Members: Chao Feng Huang 1391571 Avantika Karki 1499258 Suchi Undevia 1369059
 
 #### Project Vision
 
